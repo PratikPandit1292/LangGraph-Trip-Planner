@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0F1B2D;
+  --color-ink-light: #16233A;
+  --color-parchment: #F4EEE0;
+  --color-gold: #D9A441;
+  --color-gold-soft: #E8C878;
+  --color-teal: #4C8C82;
+  --color-teal-soft: #7FB3A8;
+  --color-muted: #8493A8;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+body {
+  background-color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+/* ---- animated background: drifting glow orbs ---- */
+@keyframes drift-a {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(6%, 8%) scale(1.15); }
+}
+@keyframes drift-b {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-8%, -5%) scale(1.1); }
+}
+
+.bg-orb-gold {
+  animation: drift-a 22s ease-in-out infinite;
+}
+.bg-orb-teal {
+  animation: drift-b 26s ease-in-out infinite;
+}
+
+/* ---- background photo ---- */
+.bg-photo {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-position: center 65%;
+  background-repeat: no-repeat;
+}
+
+/* ---- entrance animations ---- */
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+/* stagger helper - pair with inline style delay */
+.animate-fade-in-up-delayed {
+  opacity: 0;
+  animation: fade-in-up 0.5s ease forwards;
+}
