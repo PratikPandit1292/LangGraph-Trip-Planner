@@ -2,9 +2,9 @@
 
 **Live demo:** https://your-project.vercel.app
 
-![App screenshot](Screenshots/Demo_1png.png)
-![App screenshot](Screenshots/Demo_2png.png)
-![App screenshot](Screenshots/Demo_3png.png)
+![App screenshot](ScreenShots/Demo_1png.png)
+![App screenshot](ScreenShots/Demo_2png.png)
+![App screenshot](ScreenShots/Demo_3png.png)
 
 
 A small full-stack agent: it resolves a destination, researches it, drafts
