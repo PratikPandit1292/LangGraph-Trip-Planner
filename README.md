@@ -1,6 +1,6 @@
 # LangGraph Trip Planner
 
-**Live demo:** https://your-project.vercel.app
+**Live demo:** https://lang-graph-trip-planner.vercel.app/
 
 ![App screenshot](ScreenShots/Demo_1png.png)
 ![App screenshot](ScreenShots/Demo_2png.png)
